@@ -3,14 +3,14 @@
 @section('title', 'Invoices')
 
 @section('main')
-  <form action="/" method="get">
+  <form action="/invoices" method="get">
     <input
       type="text"
       name="search"
       placeholder="Firstname or Lastname"
       value="{{$search}}">
     <button type="submit">Search</button>
-    <a href="/" class="btn btn-default">Clear</a>
+    <a href="/invoices" class="btn btn-default">Clear</a>
   </form>
   <table class="table">
     <tr>
